@@ -1,3 +1,8 @@
+# Cartographie des flux de données — HealthPredict
+
+## Schéma des flux de données
+
+```mermaid
 flowchart TD
 
     U[Utilisateur] -->|Questionnaire santé<br/>Nom, email, âge<br/>Symptômes, historique médical| F[Application Web Frontend]
@@ -23,3 +28,5 @@ flowchart TD
     DASH -->|Consultation sécurisée| TEAM[Équipe interne]
 
     S3 -.->|Accès restreint / audit| DASH
+
+
