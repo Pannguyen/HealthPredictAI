@@ -92,6 +92,7 @@ Les données de santé sont considérées comme **hautement sensibles (RGPD)** e
   Les utilisateurs :
   - saisissent leurs données  
   - reçoivent les résultats 
+  
   Les équipes d'interne : 
   - Product Owner 
   - Data Eng 
