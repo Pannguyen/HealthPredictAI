@@ -27,7 +27,8 @@ flowchart TD
 
     DASH -->|Consultation sécurisée| TEAM[Équipe interne]
 
-    S3 -.->|Accès restreint / audit| DASH ```
+    S3 -.->|Accès restreint / audit| DASH 
+```
 
 
 ## Liste des données classifiées — HealthPredict
