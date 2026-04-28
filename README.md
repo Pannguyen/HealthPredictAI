@@ -1,26 +1,25 @@
-# Cartographie des flux de données — HealthPredict
-
-## Schéma des flux de données
-
-```mermaid
 flowchart TD
 
-    U[Utilisateur] -->|Saisie questionnaire santé<br/>Nom, email, âge<br/>Symptômes, historique médical| F[Application Web Frontend]
+    U[Utilisateur] -->|Questionnaire santé<br/>Nom, email, âge<br/>Symptômes, historique médical| F[Application Web Frontend]
 
     F -->|Transmission HTTPS<br/>Données personnelles<br/>Données sensibles<br/>Données techniques| API[API Backend]
 
-    API -->|Stockage des données| S3[AWS S3]
+    API -->|Validation / normalisation| DB[Base de données opérationnelle]
 
-    API -->|Envoi données santé| ML[Modèle Machine Learning]
+    DB -->|Export / conservation sécurisée| S3[Stockage chiffré AWS S3]
 
-    ML -->|Score de risque| API
+    S3 -->|Données pseudonymisées / chiffrées| PRE[Prétraitement / Feature engineering]
 
-    API -->|Résultat| F
+    PRE -->|Données préparées| ML[Modèle Machine Learning]
 
-    F -->|Affichage| U
+    ML -->|Score de risque maladie| API
 
-    API -->|Données| DASH[Dashboard interne]
+    API -->|Résultat de prédiction| F
 
-    S3 -->|Accès données| DASH
+    F -->|Affichage du score| U
 
-    DASH -->|Accès équipes| TEAM[Équipe interne]
+    API -->|Données agrégées / résultats| DASH[Dashboard interne]
+
+    DASH -->|Consultation sécurisée| TEAM[Équipe interne]
+
+    S3 -.->|Accès restreint / audit| DASH
