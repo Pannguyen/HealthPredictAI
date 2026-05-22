@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:16
+    container_name: tp_j2
+    environment:
+      POSTGRES_DB: tp_j2
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    container_name: tp_app
+    ports:
+      - "5001:5000"
+    depends_on:
+      - db
