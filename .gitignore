@@ -4,7 +4,6 @@ __pycache__/
 .env
 pgdata_j3/
 node_modules/
-*.pptx
 *.pdf
 .DS_Store
 venv/
