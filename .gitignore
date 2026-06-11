@@ -1,1 +1,13 @@
+*.log
+__pycache__/
+*.pyc
+.env
+pgdata_j3/
+node_modules/
+*.pptx
+*.pdf
 .DS_Store
+venv/
+Jour_2/db/
+venv/
+**/venv/

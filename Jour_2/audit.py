@@ -10,7 +10,6 @@ payloads = [
         "username": "admin",
         "password": "wrong_password"
     },
-
     {
         "nom": "Injection SQL simple",
         "username": "admin' -- ",
@@ -25,7 +24,7 @@ payloads = [
 ]
 
 print("\n===================================")
-print(" AUDIT DE SECURITE - SQL INJECTION")
+print(" AUDIT DE SECURITE - SQL INJECTION - Anh ")
 print("===================================")
 print(f"Date : {datetime.now()}")
 print(f"Application : {URL}\n")

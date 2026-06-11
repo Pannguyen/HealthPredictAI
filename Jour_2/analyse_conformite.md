@@ -1,6 +1,5 @@
 # Analyser la conformité du système au regard du RGPD, des transferts de données hors UE et des risques liés au cloud.
 
-
 ## 1. Identification des traitements de données
 
 L’entreprise réalise plusieurs traitements de données personnelles.
@@ -64,7 +63,7 @@ Le RGPD impose de ne collecter que les données strictement nécessaires.
 ✓ identifiant utilisateur  
 ✓ mot de passe
 
-### Données potentiellement excessives
+### Données potentiellement excessive
 
 ⚠ logs trop détaillés  
 ⚠ conservation excessive  
@@ -182,15 +181,18 @@ Fournisseurs concernés :
 
 ---
 
-# 6. Première matrice des risques
+# 6. Matrice des risques mise à jour (Plan d'Action de Remédiation)
 
-| Risque | Gravité | Impact | Niveau |
-|--------|---------|--------|--------|
-| fuite de données | élevée | élevé | critique |
-| accès non autorisé cloud | élevée | élevé | critique |
-| transfert hors UE non conforme | élevée | moyen | important |
-| dépendance fournisseur cloud | moyen | moyen | modéré |
-| conservation excessive | moyen | faible | faible |
+Cette matrice évalue les risques en croisant la **Vraisemblance (V)** (liée aux non-conformités actuelles) et la **Gravité (G)** (impact potentiel), notées de 1 (Faible) à 4 (Critique). Elle intègre les mesures d'atténuation techniques et organisationnelles immédiates.
+
+| Identifiant & Risque | Source / Cause (Non-conformité) | V (1-4) | G (1-4) | Niveau Initial | Mesures de Remédiation / Atténuation (Plan d'action) |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **R1 : Fuite ou violation de données** *(Exfiltration d'identifiants ou d'emails)* | Absence de chiffrement démontré des données au repos et vulnérabilités applicatives (ex: SQL Injection). | **4** | **4** | **Critique** | - Chiffrement AES-256 des bases de données.<br>- Utilisation stricte de requêtes préparées (correction du code).<br>- Hachage des mots de passe via `bcrypt` ou `Argon2`. |
+| **R2 : Accès extraterritorial illégal (Cloud Act)** *(Saisie de données hors-UE)* | Utilisation d'un cloud américain (AWS, Azure, GCP) sans gestion autonome ou cloisonnement des clés de chiffrement. | **3** | **4** | **Critique** | - Implémentation du mécanisme *BYOK* (*Bring Your Own Key*) pour la gestion interne des clés de chiffrement.<br>- Évaluation d'une migration vers des alternatives d'hébergement européennes qualifiées SecNumCloud (ex: OVHcloud). |
+| **R3 : Transfert hors-UE non conforme** *(Sanctions réglementaires CNIL)* | Absence de documentation et de vérification des clauses contractuelles ou de la localisation physique des serveurs. | **4** | **3** | **Important** | - Cartographie immédiate de la localisation géographique des serveurs et des flux de données de l'hébergeur.<br>- Signature des Clauses Contractuelles Types (SCC) de l'UE et complétion d'une TIA (*Transfer Impact Assessment*). |
+| **R4 : Non-respect des droits des personnes** *(Réclamations utilisateurs)* | Finalités floues, manque de transparence et absence d'une politique de confidentialité accessible à l'utilisateur. | **3** | **2** | **Important** | - Rédaction, validation et publication d'une politique de confidentialité transparente.<br>- Mise en conformité des formulaires (opt-in clairs) et tenue d'un registre des traitements (Art. 30 RGPD). |
+| **R5 : Rétention excessive des données** *(Augmentation de la surface d'attaque)* | Conservation indéfinie et non documentée des logs applicatifs (Docker, PostgreSQL) et des comptes inactifs. | **3** | **2** | **Modéré** | - Définition et configuration d'une politique de rétention automatique des logs Docker et PostgreSQL (limitation à 6 mois maximum).<br>- Processus automatique de purge ou d'anonymisation des comptes inactifs depuis 2 ans. |
+| **R6 : Dépendance technologique (Vendor Lock-in)** *(Incapacité à migrer)* | Utilisation exclusive de briques logicielles et de services propriétaires intégrés d'un unique fournisseur Cloud. | **2** | **2** | **Faible** | - Conception de l'architecture basée exclusivement sur des technologies open-source, standardisées et entièrement conteneurisées (Docker, PostgreSQL, Grafana) pour garantir une portabilité totale. |
 
 ---
 
@@ -198,10 +200,8 @@ Fournisseurs concernés :
 
 L’analyse met en évidence plusieurs points de vigilance concernant la conformité RGPD, les transferts internationaux et les risques cloud.
 
-Les principales priorités sont :
-
-- vérifier la localisation des données.
-- documenter les traitements.
-- renforcer les mesures de sécurité.
-- encadrer juridiquement les transferts hors UE.
-- réduire les risques liés au Cloud Act.
+Les principales priorités sont désormais basées sur l'exécution du plan de remédiation :
+- Appliquer les mesures de sécurité techniques (chiffrement, requêtes préparées, gestion autonome des clés).
+- Documenter formellement les traitements (registre et politique de confidentialité).
+- Encadrer juridiquement les transferts hors UE en exigeant des fournisseurs la localisation de nos données au sein de l'Union Européenne.
+- Réduire l'exposition au Cloud Act et limiter la rétention des logs applicatifs.
