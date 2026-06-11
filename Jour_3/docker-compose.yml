@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    platform: linux/arm64/v8
+    environment:
+      POSTGRES_DB: tp_j2
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432" # On peut remettre le port par défaut 5432 ici
+    command: [
+      "postgres",
+      "-c", "log_statement=all",
+      "-c", "log_connections=on",
+      "-c", "log_disconnections=on",
+      "-c", "log_line_prefix='%t [%p] '"
+    ]
+    volumes:
+      - pgdata_j3:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: flask_app
+    ports:
+      - "5001:5001"
+    volumes:  
+      - flask_logs:/var/log/flask   
+    depends_on:
+      - db
+
+  promtail:
+    image: grafana/promtail:latest
+    container_name: promtail
+    volumes:
+      - ./promtail-config.yml:/etc/promtail/config.yml
+      - flask_logs:/var/log/flask
+    command: -config.file=/etc/promtail/config.yml
+    depends_on:
+      - loki
+
+  postgres_exporter:
+    image: wrouesnel/postgres_exporter
+    container_name: postgres_exporter
+    platform: linux/amd64
+    environment:
+      DATA_SOURCE_NAME: "postgresql://admin:admin@db:5432/tp_j2?sslmode=disable"
+    depends_on:
+      - db
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
+      - loki
+
+volumes:
+  pgdata_j3:
+  flask_logs:

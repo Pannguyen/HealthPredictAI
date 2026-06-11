@@ -1,0 +1,116 @@
+2026-06-10 11:01:54,037 [INFO] [APP-AUTH] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.44.16.50:5001
+2026-06-10 11:01:54,037 [INFO] [APP-AUTH] [33mPress CTRL+C to quit[0m
+2026-06-10 11:01:54,038 [INFO] [APP-AUTH]  * Restarting with stat
+2026-06-10 11:01:54,231 [WARNING] [APP-AUTH]  * Debugger is active!
+2026-06-10 11:01:54,247 [INFO] [APP-AUTH]  * Debugger PIN: 538-861-370
+2026-06-10 11:02:48,113 [INFO] [APP-AUTH] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.44.16.50:5001
+2026-06-10 11:02:48,113 [INFO] [APP-AUTH] [33mPress CTRL+C to quit[0m
+2026-06-10 11:02:48,114 [INFO] [APP-AUTH]  * Restarting with stat
+2026-06-10 11:02:48,299 [WARNING] [APP-AUTH]  * Debugger is active!
+2026-06-10 11:02:48,310 [INFO] [APP-AUTH]  * Debugger PIN: 538-861-370
+2026-06-10 11:03:01,751 [ERROR] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:03:01] code 400, message Bad request version (':')
+2026-06-10 11:03:01,752 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:03:01] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03^\x05\x0c\x16ø\x98Ç\x91ÌÜ>5!\x01³\x16Á\x1cÏo\x06Ï×Î4T­s\x02\x7fUR Ø\x8a¼\x12X§\x1aÉ\x06\x92\x901\x09{Ã#\x0b8Ê\x95fâ\x8f\x8eâþêçê*(9\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04À\x03Ú»\x8eF`¾·\x80$$\x1f©¹\x0e\\\x05]Ý\x9b\x03\x9f·~\x842\x9d`ù\x93ëä\x92\x9a¤'|+b\x99\x9beu\x93\x8c\x067\x14Ñ´\x05\x1dIº\x98Ü¼b\x8aËÖ\x88¦\x16F\x8fNâÌ¨³\x0c\x95\x86\x80 |¥¨3mµe }XiÊð \x14³­\x97¡C²\x96\x9fñ\x19`25\x95Ú{NcüQF\x89\x121\x09¿\x9a8&¨i :[0m" 400 -
+2026-06-10 11:03:01,803 [ERROR] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:03:01] code 400, message Bad request version ('H^CJ_Å$\x18v&s')
+2026-06-10 11:03:01,806 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:03:01] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03SFiF\x87M\x1c+\x94ú´wñ\x8c²³k$_ÎÞ¿öaJÆÆ\x18\x1d\x8d¢J H^CJ_Å$\x18v&s[0m" 400 -
+2026-06-10 11:03:04,145 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:03:04] "GET / HTTP/1.1" 200 -
+2026-06-10 11:03:04,945 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:03:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-10 11:03:39,753 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:03:39] "GET / HTTP/1.1" 200 -
+2026-06-10 11:03:40,688 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:03:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-10 11:04:06,139 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:04:08,454 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:04:08] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-06-10 11:04:08,572 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:04:08] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-10 11:04:08,577 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:04:08] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-10 11:04:08,770 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:04:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-10 11:04:59,244 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:04:59] "GET / HTTP/1.1" 200 -
+2026-06-10 11:05:02,945 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : admin' --
+2026-06-10 11:05:02,954 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:05:02] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-06-10 11:05:02,975 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:05:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-10 11:05:02,982 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:05:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-10 11:05:03,099 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:05:03] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-10 11:05:27,052 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:05:27,064 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:05:27] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-06-10 11:05:27,095 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:05:27] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-10 11:05:27,095 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:05:27] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-10 11:05:27,119 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:05:27] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=H7yRNg9ojlAv3ey5BDkI HTTP/1.1" 200 -
+2026-06-10 11:05:27,139 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:05:27] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-10 11:05:27,141 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:05:27] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-10 11:06:35,945 [INFO] [APP-AUTH]  * Detected change in '/Users/AnhNguyen/Desktop/M2/Secu_donnees/HealthPredictAI/Jour_3/app.py', reloading
+2026-06-10 11:06:36,015 [INFO] [APP-AUTH]  * Restarting with stat
+2026-06-10 11:06:36,405 [WARNING] [APP-AUTH]  * Debugger is active!
+2026-06-10 11:06:36,415 [INFO] [APP-AUTH]  * Debugger PIN: 538-861-370
+2026-06-10 11:06:50,984 [INFO] [APP-AUTH] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.44.16.50:5001
+2026-06-10 11:06:50,984 [INFO] [APP-AUTH] [33mPress CTRL+C to quit[0m
+2026-06-10 11:06:50,985 [INFO] [APP-AUTH]  * Restarting with stat
+2026-06-10 11:06:51,167 [WARNING] [APP-AUTH]  * Debugger is active!
+2026-06-10 11:06:51,178 [INFO] [APP-AUTH]  * Debugger PIN: 538-861-370
+2026-06-10 11:06:57,709 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : admin' --
+2026-06-10 11:06:57,914 [WARNING] [APP-AUTH] ECHEC_CONNEXION - Tentative invalide pour l'utilisateur : admin' --
+2026-06-10 11:06:57,919 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:06:57] "POST / HTTP/1.1" 200 -
+2026-06-10 11:07:05,983 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:07:05] "GET / HTTP/1.1" 200 -
+2026-06-10 11:07:26,963 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:07:27,403 [INFO] [APP-AUTH] CONNEXION_REUSSIE - Utilisateur : alice
+2026-06-10 11:07:27,403 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:07:27] "POST / HTTP/1.1" 200 -
+2026-06-10 11:07:40,977 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:07:40] "GET / HTTP/1.1" 200 -
+2026-06-10 11:07:47,492 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : admin
+2026-06-10 11:07:47,916 [WARNING] [APP-AUTH] ECHEC_CONNEXION - Tentative invalide pour l'utilisateur : admin
+2026-06-10 11:07:47,917 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:07:47] "POST / HTTP/1.1" 200 -
+2026-06-10 11:08:12,495 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : admin' --
+2026-06-10 11:08:12,552 [WARNING] [APP-AUTH] ECHEC_CONNEXION - Tentative invalide pour l'utilisateur : admin' --
+2026-06-10 11:08:12,555 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:08:12] "POST / HTTP/1.1" 200 -
+2026-06-10 11:08:51,992 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:08:52,416 [WARNING] [APP-AUTH] ECHEC_CONNEXION - Tentative invalide pour l'utilisateur : alice
+2026-06-10 11:08:52,418 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:08:52] "POST / HTTP/1.1" 200 -
+2026-06-10 11:09:23,514 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : admin' --
+2026-06-10 11:09:23,547 [WARNING] [APP-AUTH] ECHEC_CONNEXION - Tentative invalide pour l'utilisateur : admin' --
+2026-06-10 11:09:23,549 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:09:23] "POST / HTTP/1.1" 200 -
+2026-06-10 11:24:22,881 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : admin' --
+2026-06-10 11:24:22,932 [WARNING] [APP-AUTH] ECHEC_CONNEXION - Tentative invalide pour l'utilisateur : admin' --
+2026-06-10 11:24:22,939 [INFO] [APP-AUTH] 127.0.0.1 - - [10/Jun/2026 11:24:22] "POST / HTTP/1.1" 200 -
+2026-06-10 11:27:23,462 [INFO] [APP-AUTH] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.44.16.50:5001
+2026-06-10 11:27:23,464 [INFO] [APP-AUTH] [33mPress CTRL+C to quit[0m
+2026-06-10 11:27:23,470 [INFO] [APP-AUTH]  * Restarting with stat
+2026-06-10 11:27:23,654 [WARNING] [APP-AUTH]  * Debugger is active!
+2026-06-10 11:27:23,664 [INFO] [APP-AUTH]  * Debugger PIN: 538-861-370
+2026-06-10 11:27:31,608 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:27:31] "GET / HTTP/1.1" 200 -
+2026-06-10 11:27:38,232 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:27:38,729 [INFO] [APP-AUTH] CONNEXION_REUSSIE - Utilisateur : alice
+2026-06-10 11:27:38,730 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:27:38] "POST / HTTP/1.1" 200 -
+2026-06-10 11:27:54,951 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:27:54] "GET / HTTP/1.1" 200 -
+2026-06-10 11:27:57,247 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : admin' --
+2026-06-10 11:27:57,288 [WARNING] [APP-AUTH] ECHEC_CONNEXION - Tentative invalide pour l'utilisateur : admin' --
+2026-06-10 11:27:57,289 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:27:57] "POST / HTTP/1.1" 200 -
+2026-06-10 11:38:41,548 [INFO] [APP-AUTH]  * Detected change in '/Users/AnhNguyen/Desktop/M2/Secu_donnees/HealthPredictAI/Jour_3/app.py', reloading
+2026-06-10 11:38:41,626 [INFO] [APP-AUTH]  * Restarting with stat
+2026-06-10 11:38:41,970 [WARNING] [APP-AUTH]  * Debugger is active!
+2026-06-10 11:38:41,981 [INFO] [APP-AUTH]  * Debugger PIN: 538-861-370
+2026-06-10 11:39:22,931 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:39:22,985 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:22] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-06-10 11:39:23,046 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:23] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-10 11:39:23,047 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:23] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-10 11:39:23,674 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:23] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-10 11:39:43,578 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:39:43,594 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:43] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-06-10 11:39:43,649 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:43] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-10 11:39:43,653 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:43] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-10 11:39:43,789 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:43] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-10 11:39:52,456 [INFO] [APP-AUTH] Tentative de connexion initiée pour l'utilisateur : alice
+2026-06-10 11:39:52,465 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-06-10 11:39:52,506 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:52] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-10 11:39:52,510 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:52] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-10 11:39:52,606 [INFO] [APP-AUTH] 10.44.16.50 - - [10/Jun/2026 11:39:52] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-10 11:44:40,687 [INFO] [APP-AUTH]  * Detected change in '/Users/AnhNguyen/Desktop/M2/Secu_donnees/HealthPredictAI/Jour_3/app.py', reloading
+2026-06-10 11:44:40,779 [INFO] [APP-AUTH]  * Restarting with stat
+2026-06-10 11:44:41,113 [WARNING] [APP-AUTH]  * Debugger is active!
+2026-06-10 11:44:41,125 [INFO] [APP-AUTH]  * Debugger PIN: 538-861-370
