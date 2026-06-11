@@ -18,45 +18,7 @@ L'attaque consiste à injecter la charge utile suivante dans le champ d'authenti
 | **Stockage des mots de passe** | **Clair** : Les secrets des utilisateurs sont visibles en texte brut dans la table PostgreSQL (`admin123`, `alice123`). | **Haché de manière irréversible** : Les secrets sont transformés en empreintes uniques via l'algorithme robuste `Bcrypt`. |
 | **Résilience face au vol de base de données (Dump)** | Compromission totale et immédiate de l'intégrité de l'ensemble des comptes de la plateforme. | Protection cryptographique forte. Les mots de passe restent illisibles, protégés contre les attaques par force brute et par dictionnaires. |
 
----
-
-## 4. Captures d'écran et validations visuelles de l'infrastructure
-
-> 💡 **Instructions pour la composition finale :** Remplacer les encadrés ci-dessous par vos captures d'écran correspondantes pour finaliser votre dossier de livrables.
-
-
-### B. Logs d'audit générés en console (Audit de sécurité)
-Interception en temps réel des flux applicatifs au sein du terminal de commande de votre Mac. On constate la distinction explicite entre une connexion validée et un blocage d'injection SQL (`admin' --`).
-```
-┌───────────────────────────────────────────────────────────────────────────┐
-│ [ PLACER LA CAPTURE ÉCRAN ICI ]                                           │
-│ Fichier source : Screenshot 2026-06-10 at 11.29.01.png                    │
-│ Contenu : Terminaux avec [INFO] CONNEXION_REUSSIE et [WARNING] ECHEC...  │
-└───────────────────────────────────────────────────────────────────────────┘
-```
-
-### C. Déploiement de l'infrastructure de supervision (Grafana / Loki)
-Validation de la configuration de l'infrastructure DevOps. La source de données Loki a été ajoutée avec succès au serveur Grafana centralisé, validant la syntaxe d'analyse de requêtes complexes LogQL.
-```
-┌───────────────────────────────────────────────────────────────────────────┐
-│ [ PLACER LA CAPTURE ÉCRAN ICI ]                                           │
-│ Fichier source : Screenshot 2026-06-10 at 11.33.48.jpg                    │
-│ Contenu : Onglet Explore de Grafana affichant la requête LogQL valide     │
-└───────────────────────────────────────────────────────────────────────────┘
-```
-
-### D. Supervision de l'état des conteneurs système
-Supervision opérationnelle du cycle de vie des conteneurs isolés au sein de l'architecture Docker Desktop de votre Mac (PostgreSQL, Grafana, Loki).
-```
-┌───────────────────────────────────────────────────────────────────────────┐
-│ [ PLACER LA CAPTURE ÉCRAN ICI ]                                           │
-│ Fichier source : Screenshot 2026-06-10 at 11.29.17.jpg                    │
-│ Contenu : Tableau de bord Docker Desktop confirmant le statut des microserv│
-└───────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
+## 4.Captures d'écran et validations visuelles de l'infrastructure
 ## 5. Réponses aux questions d'analyse technique
 
 ### Q1. Pourquoi l'injection SQL `admin' --` ne fonctionne-t-elle plus avec une requête préparée ?
